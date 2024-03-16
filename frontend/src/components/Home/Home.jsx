@@ -17,7 +17,7 @@ function Home() {
     <>
       <section className="home">
         <div>
-          <motion.h1 {...options}>MBA Burger Wala</motion.h1>
+          <motion.h1 {...options}>Khana Wala</motion.h1>
           <motion.p {...options} transition={{ delay: 0.2 }}>
             Give yourself a tasty burger.
           </motion.p>
