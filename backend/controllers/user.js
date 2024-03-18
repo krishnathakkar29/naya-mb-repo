@@ -5,6 +5,7 @@ export const myProfile = (req, res, next) => {
   });
 };
 
+//all
 export const logout = (req, res, next) => {
   req.session.destroy((err) => {
     if (err) return next(err);
