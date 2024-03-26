@@ -34,6 +34,38 @@ export const placeOrder = asyncError(async (req, res, next) => {
   });
 });
 
+// export const placeOrderOnline = asyncError(async (req, res, next) => {
+//   const {
+//     shippingInfo,
+//     orderItems,
+//     paymentMethod,
+//     itemsPrice,
+//     taxPrice,
+//     shippingCharges,
+//     totalAmount,
+//   } = req.body;
+
+//   const user = "req.user._id";
+
+//   const orderOptions = {
+//     shippingInfo,
+//     orderItems,
+//     paymentMethod,
+//     itemsPrice,
+//     taxPrice,
+//     shippingCharges,
+//     totalAmount,
+//     user,
+//   };
+
+//   await Order.create(orderOptions);
+
+//   res.status(201).json({
+//     success: true,
+//     message: "Order placed Successfully via Cash on Delivery",
+//   });
+// });
+
 export const getMyOrders = asyncError(async (req, res, next) => {
   const orders = await Order.find({
     user: req.user._id,

@@ -5,6 +5,6 @@ connectDB()
 .then(() => {
   // process.env.PORT
   app.listen(4000, () => {
-    console.log("Server listening at port ", process.env.PORT);
+    console.log("Server listening at port ", process.env.PORT, "in ", process.env.NODE_ENV, "mode");
   });
 });
